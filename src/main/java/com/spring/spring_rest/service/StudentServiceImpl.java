@@ -145,7 +145,7 @@ public class StudentServiceImpl implements StudentService {
 
         studentRepo.findById(theId)
                 .orElseThrow(() -> new StudentNotFoundException(
-                        "Student id " + theId + "not found!"));
+                        "Student id " + theId + " not found!"));
 
         studentRepo.deleteById(theId);
     }
